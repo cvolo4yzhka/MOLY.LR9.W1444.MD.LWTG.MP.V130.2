@@ -88,7 +88,7 @@ OTP_SUPPORT = FALSE
   #   FALSE -> TRUE
   #   TRUE -> FALSE
 
-BAND_SUPPORT = QUAD
+BAND_SUPPORT = DUAL900
   # Description:
   #   Described the support band of RF
   # Option Values:
