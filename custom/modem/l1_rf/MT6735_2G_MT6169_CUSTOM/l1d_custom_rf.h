@@ -242,7 +242,7 @@
 /*MT6169*//*   Crystal parameter                          */
 /*MT6169*//*----------------------------------------------*/
 /*MT6169*/ #if  IS_AFC_VCXO_SUPPORT
-/*MT6169*/ #define Custom_RF_XO_CapID   156 /* RF SOP, Range:0~255 */
+/*MT6169*/ #define Custom_RF_XO_CapID   159 /* RF SOP, Range:0~255 156*/
 /*MT6169*/ #else
 /*MT6169*/ #define Custom_RF_XO_CapID   0   /* For MT7206 with VCTCXO */
 /*MT6169*/ #endif
@@ -261,14 +261,14 @@
 /*MT6169*/ /**************************************/
 /*MT6169*/
 /*MT6169*/ #if IS_2G_MIPI_ENABLE
-/*MT6169*/ #define GSM850_PATH_SEL IORX_LB2/*MIPI ENABLE*/
-/*MT6169*/ #define GSM_PATH_SEL    IORX_LB1/*MIPI ENABLE*/
-/*MT6169*/ #define DCS_PATH_SEL    IORX_HB3/*MIPI ENABLE*/
-/*MT6169*/ #define PCS_PATH_SEL    IORX_MB1/*MIPI ENABLE*/
+/*MT6169*/ #define GSM850_PATH_SEL IORX_LB3/*MIPI ENABLE - 7 */
+/*MT6169*/ #define GSM_PATH_SEL    IORX_LB2/*MIPI ENABLE - 6 */
+/*MT6169*/ #define DCS_PATH_SEL    IORX_MB2/*MIPI ENABLE - 4 */
+/*MT6169*/ #define PCS_PATH_SEL    IORX_MB1/*MIPI ENABLE - 3 */
 /*MT6169*/ #else
-/*MT6169*/ #define GSM850_PATH_SEL IORX_LB1/*MIPI DISABLE*/
+/*MT6169*/ #define GSM850_PATH_SEL IORX_LB3/*MIPI DISABLE*/
 /*MT6169*/ #define GSM_PATH_SEL    IORX_LB2/*MIPI DISABLE*/
-/*MT6169*/ #define DCS_PATH_SEL    IORX_MB1/*MIPI DISABLE*/
+/*MT6169*/ #define DCS_PATH_SEL    IORX_MB2/*MIPI DISABLE*/
 /*MT6169*/ #define PCS_PATH_SEL    IORX_HB1/*MIPI DISABLE*/
 /*MT6169*/ #endif
 /*MT6169*/
@@ -286,10 +286,10 @@
 /*MT6169*/ /**************************************/
 /*MT6169*/
 /*MT6169*/ #if IS_2G_MIPI_ENABLE
-/*MT6169*/ #define GSM850_PORT_SEL IOTX_LB3/*MIPI ENABLE*/
-/*MT6169*/ #define GSM_PORT_SEL    IOTX_LB3/*MIPI ENABLE*/
-/*MT6169*/ #define DCS_PORT_SEL    IOTX_MB1/*MIPI ENABLE*/
-/*MT6169*/ #define PCS_PORT_SEL    IOTX_MB1/*MIPI ENABLE*/
+/*MT6169*/ #define GSM850_PORT_SEL IOTX_LB3/*MIPI ENABLE- 6*/
+/*MT6169*/ #define GSM_PORT_SEL    IOTX_LB3/*MIPI ENABLE- 6*/
+/*MT6169*/ #define DCS_PORT_SEL    IOTX_MB2/*MIPI ENABLE- 3*/
+/*MT6169*/ #define PCS_PORT_SEL    IOTX_MB2/*MIPI ENABLE- 3*/
 /*MT6169*/ #else
 /*MT6169*/ #define GSM850_PORT_SEL IOTX_LB3/*MIPI DISABLE*/
 /*MT6169*/ #define GSM_PORT_SEL    IOTX_LB3/*MIPI DISABLE*/

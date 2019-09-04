@@ -400,7 +400,7 @@
       #if IS_RF_MT6162 || IS_RF_MT6163
 #define  PSI_EE               (4000)            /* DAC initial value (Setting 4000 is for 3G ) */
       #else
-#define  PSI_EE               (4500)            /* DAC initial value */
+#define  PSI_EE               (4139)            /* DAC initial value */
       #endif
    #endif
 #define  AFC_DP_MIN           (0)
@@ -994,7 +994,7 @@
 
 #if IS_RF_MT6169
 /*MT6169*/ #ifdef AFC_13bit
-/*MT6169*/ #define  C_PSI_STA     (474)   /* C_PSI_STA= sta^(-1)  * (2^12), sta=8.64   */
+/*MT6169*/ #define  C_PSI_STA     (1638)   /* C_PSI_STA= sta^(-1)  * (2^12), sta=8.64   */
 /*MT6169*/ #else
 /*MT6169*/ #define  C_PSI_STA     (146)   /* C_PSI_STA= sta^(-1)  * (2^12), sta=28.05  */
 /*MT6169*/ #endif
