@@ -103,12 +103,12 @@
 /*---------------------------------------------------------------------*/
 
  //* --------------------- PDATA_BAND1 Start ---------------------------*/
-#define    PDATA_BAND1_PR1      0x00000005     
-#define    PDATA_BAND1_PR2      0x00000005     
+#define    PDATA_BAND1_PR1      0x00001005     
+#define    PDATA_BAND1_PR2      0x00001005     
 #define    PDATA_BAND1_PR2B     PDATA_BAND1_PR2
 #define    PDATA_BAND1_PR3      0x00000000     
 #define    PDATA_BAND1_PT1      PDATA_BAND1_PR1
-#define    PDATA_BAND1_PT2      0x00000001     
+#define    PDATA_BAND1_PT2      0x00001001     
 #define    PDATA_BAND1_PT2B     PDATA_BAND1_PT2
 #define    PDATA_BAND1_PT3      0x00000000     
  /* --------------------- PDATA_BAND1 End ------------------------------*/
@@ -119,12 +119,12 @@
 #define    PDATA2_BAND1_PR3     0x00000000      
  /* --------------------- PDATA_BAND1 RXD End --------------------------*/
  /* --------------------- PDATA_BAND2 Start ----------------------------*/
-#define    PDATA_BAND2_PR1      0x00000001     
-#define    PDATA_BAND2_PR2      0x00000001     
+#define    PDATA_BAND2_PR1      0x00001001     
+#define    PDATA_BAND2_PR2      0x00001001     
 #define    PDATA_BAND2_PR2B     PDATA_BAND2_PR2
 #define    PDATA_BAND2_PR3      0x00000000     
 #define    PDATA_BAND2_PT1      PDATA_BAND2_PR1
-#define    PDATA_BAND2_PT2      0x00000001     
+#define    PDATA_BAND2_PT2      0x00001001     
 #define    PDATA_BAND2_PT2B     PDATA_BAND2_PT2
 #define    PDATA_BAND2_PT3      0x00000000     
  /* --------------------- PDATA_BAND2 End ------------------------------*/
@@ -135,12 +135,12 @@
 #define    PDATA2_BAND2_PR3     0x00000000      
  /* --------------------- PDATA_BAND2 RXD End --------------------------*/
 /* --------------------- PDATA_BAND3 Start ---------------------------*/
-#define    PDATA_BAND3_PR1      0x00000000     
-#define    PDATA_BAND3_PR2      0x00000000     
+#define    PDATA_BAND3_PR1      0x00001000     
+#define    PDATA_BAND3_PR2      0x00001000     
 #define    PDATA_BAND3_PR2B     PDATA_BAND3_PR2
 #define    PDATA_BAND3_PR3      0x00000000     
 #define    PDATA_BAND3_PT1      PDATA_BAND3_PR1
-#define    PDATA_BAND3_PT2      0x00000000     
+#define    PDATA_BAND3_PT2      0x00001000     
 #define    PDATA_BAND3_PT2B     PDATA_BAND3_PT2
 #define    PDATA_BAND3_PT3      0x00000000     
 /* --------------------- PDATA_BAND3 End ------------------------------*/
@@ -151,12 +151,12 @@
 #define    PDATA2_BAND3_PR3     0x00000000      
 /* --------------------- PDATA_BAND3 RXD End --------------------------*/
  /* --------------------- PDATA_BAND5 Start ----------------------------*/
-#define    PDATA_BAND5_PR1      0x00000000     
-#define    PDATA_BAND5_PR2      0x00000000     
+#define    PDATA_BAND5_PR1      0x00003000     
+#define    PDATA_BAND5_PR2      0x00003000     
 #define    PDATA_BAND5_PR2B     PDATA_BAND5_PR2
 #define    PDATA_BAND5_PR3      0x00000000     
 #define    PDATA_BAND5_PT1      PDATA_BAND5_PR1
-#define    PDATA_BAND5_PT2      0x00000000     
+#define    PDATA_BAND5_PT2      0x00003000     
 #define    PDATA_BAND5_PT2B     PDATA_BAND5_PT2
 #define    PDATA_BAND5_PT3      0x00000000
  /* --------------------- PDATA_BAND5 End ------------------------------*/
@@ -183,12 +183,12 @@
 #define    PDATA2_BAND6_PR3     PDATA2_BAND5_PR3
 /* --------------------- PDATA_BAND6 RXD End --------------------------*/
  /* --------------------- PDATA_BAND8 Start ----------------------------*/
-#define    PDATA_BAND8_PR1      0x00000000     
-#define    PDATA_BAND8_PR2      0x00000000     
+#define    PDATA_BAND8_PR1      0x00001000     
+#define    PDATA_BAND8_PR2      0x00001000     
 #define    PDATA_BAND8_PR2B     PDATA_BAND8_PR2
 #define    PDATA_BAND8_PR3      0x00000000     
 #define    PDATA_BAND8_PT1      PDATA_BAND8_PR1
-#define    PDATA_BAND8_PT2      0x00000000     
+#define    PDATA_BAND8_PT2      0x00001000     
 #define    PDATA_BAND8_PT2B     PDATA_BAND8_PT2
 #define    PDATA_BAND8_PT3      0x00000000
  /* --------------------- PDATA_BAND8 End ------------------------------*/
@@ -204,13 +204,13 @@
 /*MT6169*/ /* either high (VCO divide-by-2) or low (VCO divide-by-4) band.             */
 /*MT6169*/ /* TBD: Complete the description later.                                     */
 /*MT6169*/ /****************************************************************************/
-/*MT6169*/ #define    BAND1_CHANNEL_SEL    LNA_HB_3
+/*MT6169*/ #define    BAND1_CHANNEL_SEL    LNA_HB_1
 /*MT6169*/ #define    BAND2_CHANNEL_SEL    LNA_MB_1
 /*MT6169*/ #define    BAND3_CHANNEL_SEL    NON_USED_BAND
 /*MT6169*/ #define    BAND4_CHANNEL_SEL    NON_USED_BAND
-/*MT6169*/ #define    BAND5_CHANNEL_SEL    LNA_LB_2
+/*MT6169*/ #define    BAND5_CHANNEL_SEL    LNA_LB_3
 /*MT6169*/ #define    BAND6_CHANNEL_SEL    NON_USED_BAND
-/*MT6169*/ #define    BAND8_CHANNEL_SEL    LNA_LB_1
+/*MT6169*/ #define    BAND8_CHANNEL_SEL    LNA_LB_2
 /*MT6169*/ #define    BAND9_CHANNEL_SEL    NON_USED_BAND
 /*MT6169*/ #define    BAND10_CHANNEL_SEL   NON_USED_BAND
 /*MT6169*/ #define    BAND11_CHANNEL_SEL   NON_USED_BAND
@@ -219,7 +219,7 @@
 /*MT6169*/  /****************************************************************************/
 /*MT6169*/  /* RXD. Descript it later.                                                   */
 /*MT6169*/  /****************************************************************************/
-/*MT6169*/ #define    BAND1_CHANNEL2_SEL    LNA_RXD_HB_1 
+/*MT6169*/ #define    BAND1_CHANNEL2_SEL    LNA_RXD_MB_2 
 /*MT6169*/ #define    BAND2_CHANNEL2_SEL    NON_USED_BAND 
 /*MT6169*/ #define    BAND3_CHANNEL2_SEL    NON_USED_BAND
 /*MT6169*/ #define    BAND4_CHANNEL2_SEL    NON_USED_BAND
@@ -236,8 +236,8 @@
 /*MT6169*/ /* All options are listed below:                            */
 /*MT6169*/ /* TX_HIGH_BAND3/TX_HIGH_BAND2/TX_LOW_BAND1/TX_NULL_BAND    */
 /*MT6169*/ /************************************************************/
-/*MT6169*/ #define    BAND1_OUTPUT_SEL     TX_MB_2
-/*MT6169*/ #define    BAND2_OUTPUT_SEL     TX_MB_2
+/*MT6169*/ #define    BAND1_OUTPUT_SEL     TX_MB_1
+/*MT6169*/ #define    BAND2_OUTPUT_SEL     TX_MB_1
 /*MT6169*/ #define    BAND3_OUTPUT_SEL     TX_NULL_BAND
 /*MT6169*/ #define    BAND4_OUTPUT_SEL     TX_NULL_BAND
 /*MT6169*/ #define    BAND5_OUTPUT_SEL     TX_LB_2
@@ -403,9 +403,9 @@
 /*MT6169*/ #define    TPO_3G_TABLE_ON_MASK         0x0
 /*MT6169*/
 /*MT6169*/ #define    RX_HIGHBAND1_INDICATOR UMTSBand1
-/*MT6169*/ #define    RX_HIGHBAND2_INDICATOR UMTSBand2
+/*MT6169*/ #define    RX_HIGHBAND2_INDICATOR UMTSBandNone
 /*MT6169*/ #define    RX_HIGHBAND3_INDICATOR UMTSBandNone
-/*MT6169*/ #define    RX_LOWBAND1_INDICATOR UMTSBand5
+/*MT6169*/ #define    RX_LOWBAND1_INDICATOR UMTSBandNone
 /*MT6169*/ #define    RX_LOWBAND2_INDICATOR UMTSBand8
 
 
