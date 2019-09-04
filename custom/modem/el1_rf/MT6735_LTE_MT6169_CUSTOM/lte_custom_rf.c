@@ -10069,9 +10069,9 @@ DECLARE_ALIGN_BEGIN(64) LTE_RSSIBandGainTable*  LTE_RSSIGainTbl[LTE_AUGMENTED_BA
 
 LTE_FreqAdjustTable FreqAdjustTbl =
 {
-   128,
-   4045,
-   1606, //4096/2.55=1606
+   159, /*capid*/
+   4139, /*initial freq*/
+   1668, /*slope 4096/2.55=1606*/
 };
 
 LTE_FreqAdjustTable* LTE_FreqAdjustTbl[] =
