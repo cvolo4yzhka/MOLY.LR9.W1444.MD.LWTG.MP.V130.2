@@ -105,7 +105,7 @@ MML1_MIPI_INITIAL_CW_T MML1_MIPI_INITIAL_CW_set1[MML1_MIPI_MAX_INITIAL_CW_NUM] =
 MML1_MIPI_USID_CHANGE_T MML1_MIPI_USID_CHANGE_TABLE[MML1_MIPI_MAX_USID_CHANGE_NUM] =
 {
    // USID change type   , port_sel        , current USID , PRODUCT_ID , MANUFACTORY_ID   new USID
-   {USID_REG_W           , MML1_MIPI_PORT0 , 0xF          , 0x85        , 0x1A5        , 0xE     },
+   {USID_REG_W           , MML1_MIPI_PORT0 , 0xF          , 0x1B        , 0x1A5        , 0xB    },
    {USID_NULL,0,0,0,0,0},
    {USID_NULL,0,0,0,0,0},
    {USID_NULL,0,0,0,0,0},
@@ -122,7 +122,7 @@ MML1_MIPI_USID_CHANGE_T MML1_MIPI_USID_CHANGE_TABLE[MML1_MIPI_MAX_USID_CHANGE_NU
 MML1_MIPI_USID_CHANGE_T MML1_MIPI_USID_CHANGE_TABLE_ReMap_set0[MML1_MIPI_MAX_USID_CHANGE_NUM] =
 {
    // USID change type   , port_sel        , current USID , PRODUCT_ID , MANUFACTORY_ID   new USID
-   {USID_REG_W           , MML1_MIPI_PORT0 , 0xF          , 0x85        , 0x1A5        , 0xE     },
+   {USID_REG_W           , MML1_MIPI_PORT0 , 0xF          , 0x1B        , 0x1A5        , 0xB     },
    {USID_NULL,0,0,0,0,0},
    {USID_NULL,0,0,0,0,0},
    {USID_NULL,0,0,0,0,0},
@@ -137,7 +137,7 @@ MML1_MIPI_USID_CHANGE_T MML1_MIPI_USID_CHANGE_TABLE_ReMap_set0[MML1_MIPI_MAX_USI
 MML1_MIPI_USID_CHANGE_T MML1_MIPI_USID_CHANGE_TABLE_set0[MML1_MIPI_MAX_USID_CHANGE_NUM] =
 {
    // USID change type   , port_sel        , current USID , PRODUCT_ID , MANUFACTORY_ID   new USID
-   {USID_REG_W           , MML1_MIPI_PORT0 , 0xF          , 0x85        , 0x1A5        , 0xE     },
+   {USID_REG_W           , MML1_MIPI_PORT0 , 0xF          , 0x1B        , 0x1A5        , 0xB     },
    {USID_NULL,0,0,0,0,0},
    {USID_NULL,0,0,0,0,0},
    {USID_NULL,0,0,0,0,0},
