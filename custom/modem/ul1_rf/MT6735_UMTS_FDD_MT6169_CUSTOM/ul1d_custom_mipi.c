@@ -70,6 +70,8 @@
 UL1_MIPI_DATA_TABLE_T UMTS_MIPI_INITIAL_CW[MIPI_MAX_INITIAL_IMM_BSI_CW_NUM] =
 {
    //elm type, port_sel     , data_seq, ,usid         , {addr, data}
+   {MIPI_ASM, UL1_MIPI_PORT0, REG_W, MIPI_USID_PA0,{0x1C,0x38}},
+   {MIPI_ASM, UL1_MIPI_PORT1, REG_W, MIPI_USID_PA0,{0x1C,0x38}},
    {UMTS_MIPI_END, 0, 0, 0,{0,0}}
 };
 
@@ -554,8 +556,8 @@ UL1_MIPI_DATA_SUBBAND_TABLE_T UMTS_MIPI_RX_DATA_UMTSBandNone[UL1_MIPI_RX_DATA_NU
 UL1_MIPI_DATA_SUBBAND_TABLE_T UMTS_MIPI_RX_DATA_UMTSBand1[UL1_MIPI_RX_DATA_NUM] = 
 {
    //No.      elm type , port_sel      ,  data_seq  , user id,         { { sub 0 ,addr, data }},{ sub 1 ,addr, data }},{ sub 2 ,addr, data}}, { sub 3, addr, data  }}, { sub 4, addr data  } }},
-   { /* 0  */ MIPI_ASM,  UL1_MIPI_PORT1,  REG_W     , MIPI_USID_ASM0, { { 21124 ,{0x1C, 0x38}}, { 21262 ,{0x1C, 0x38}}, { 21400 ,{0x1C, 0x38}}, { 21538  ,{0x1C, 0x38}}, { 21676 ,{0x1C, 0x38}}} },
-   { /* 1  */ MIPI_ASM,  UL1_MIPI_PORT1,  REG_W     , MIPI_USID_ASM0, { { 21124 ,{0x00, 0x02}}, { 21262 ,{0x00, 0x02}}, { 21400 ,{0x00, 0x02}}, { 21538  ,{0x00, 0x02}}, { 21676 ,{0x00, 0x02}}} },
+   { /* 0  */ MIPI_ASM,  UL1_MIPI_PORT1,  REG_W     , MIPI_USID_PA0, { { 21124 ,{0x1C, 0x38}}, { 21262 ,{0x1C, 0x38}}, { 21400 ,{0x1C, 0x38}}, { 21538  ,{0x1C, 0x38}}, { 21676 ,{0x1C, 0x38}}} },
+   { /* 1  */ MIPI_ASM,  UL1_MIPI_PORT1,  REG_W     , MIPI_USID_PA0, { { 21124 ,{0x00, 0x0D}}, { 21262 ,{0x00, 0x0D}}, { 21400 ,{0x00, 0x0D}}, { 21538  ,{0x00, 0x0D}}, { 21676 ,{0x00, 0x0D}}} },
    { /* 2  */ MIPI_NULL, MIPI_DATA_NULL,  SEQ_NULL  , MIPI_USID_INIT0,{ { 21124 ,{0x0,  0x0}},  { 21262 ,{0x0,  0x0}},   { 21400 ,{0x0, 0x0}},   { 21538  ,{0x0, 0x0}},   { 21676 ,{0x0,  0x0}}} },
    { /* 3  */ MIPI_NULL, MIPI_DATA_NULL,  SEQ_NULL  , MIPI_USID_INIT0,{ { 21124 ,{0x0,  0x0}},  { 21262 ,{0x0,  0x0}},   { 21400 ,{0x0, 0x0}},   { 21538  ,{0x0, 0x0}},   { 21676 ,{0x0,  0x0}}} },
    { /* 4  */ MIPI_NULL, MIPI_DATA_NULL,  SEQ_NULL  , MIPI_USID_INIT0,{ { 21124 ,{0x0,  0x0}},  { 21262 ,{0x0,  0x0}},   { 21400 ,{0x0, 0x0}},   { 21538  ,{0x0, 0x0}},   { 21676 ,{0x0,  0x0}}} },
@@ -861,8 +863,8 @@ UL1_MIPI_DATA_SUBBAND_TABLE_T UMTS_MIPI_RX_DATA_UMTSBand5_set1[UL1_MIPI_RX_DATA_
 UL1_MIPI_DATA_SUBBAND_TABLE_T UMTS_MIPI_RX_DATA_UMTSBand8[UL1_MIPI_RX_DATA_NUM] = 
 {
    //No.      elm type , port_sel      ,  data_seq  , user id,         { { sub 0 ,addr, data }},{ sub 1 ,addr, data }},{ sub 2 ,addr, data}}, { sub 3, addr, data  }}, { sub 4, addr data  } }},
-   { /* 0  */ MIPI_ASM,  UL1_MIPI_PORT1,  REG_W     , MIPI_USID_ASM0, { { 9274 ,{0x1C, 0x38}}, { 9349 ,{0x1C, 0x38}},   { 9425 ,{0x1C, 0x38}},  { 9500  ,{0x1C, 0x38}},   { 9576 ,{0x1C, 0x38}} }},
-   { /* 1  */ MIPI_ASM,  UL1_MIPI_PORT1,  REG_W     , MIPI_USID_ASM0, { { 9274 ,{0x00, 0x0D}}, { 9349 ,{0x00, 0x0D}},   { 9425 ,{0x00, 0x0D}},  { 9500  ,{0x00, 0x0D}},   { 9576 ,{0x00, 0x0D}} }},
+   { /* 0  */ MIPI_ASM,  UL1_MIPI_PORT1,  REG_W     , MIPI_USID_PA0, { { 9274 ,{0x1C, 0x38}}, { 9349 ,{0x1C, 0x38}},   { 9425 ,{0x1C, 0x38}},  { 9500  ,{0x1C, 0x38}},   { 9576 ,{0x1C, 0x38}} }},
+   { /* 1  */ MIPI_ASM,  UL1_MIPI_PORT1,  REG_W     , MIPI_USID_PA0, { { 9274 ,{0x00, 0x05}}, { 9349 ,{0x00, 0x05}},   { 9425 ,{0x00, 0x05}},  { 9500  ,{0x00, 0x05}},   { 9576 ,{0x00, 0x05}} }},
    { /* 2  */ MIPI_NULL, MIPI_DATA_NULL,  SEQ_NULL  , MIPI_USID_INIT0, { { 9274 ,{0x0, 0x0}},   { 9349 ,{0x0, 0x0}},     { 9425 ,{0x0, 0x0}},    { 9500  ,{0x0, 0x0}},     { 9576 ,{0x0,   0x0}} }},
    { /* 3  */ MIPI_NULL, MIPI_DATA_NULL,  SEQ_NULL  , MIPI_USID_INIT0, { { 9274 ,{0x0, 0x0}},   { 9349 ,{0x0, 0x0}},     { 9425 ,{0x0, 0x0}},    { 9500  ,{0x0, 0x0}},     { 9576 ,{0x0,   0x0}} }},
    { /* 4  */ MIPI_NULL, MIPI_DATA_NULL,  SEQ_NULL  , MIPI_USID_INIT0, { { 9274 ,{0x0, 0x0}},   { 9349 ,{0x0, 0x0}},     { 9425 ,{0x0, 0x0}},    { 9500  ,{0x0, 0x0}},     { 9576 ,{0x0,   0x0}} }},
@@ -1336,13 +1338,13 @@ UL1_MIPI_DATA_SUBBAND_TABLE_T UMTS_MIPI_TX_DATA_UMTSBandNone[UL1_MIPI_TX_DATA_NU
 UL1_MIPI_DATA_SUBBAND_TABLE_T UMTS_MIPI_TX_DATA_UMTSBand1[UL1_MIPI_TX_DATA_NUM] = 
 {
    //No.      elm type , port_sel      ,  data_seq  , user id,         { { sub 0 ,addr, data }},{ sub 1 ,addr, data }},{ sub 2 ,addr, data}}, { sub 3, addr, data}}, { sub 4, addr data  } }},   
-   { /* 0  */ MIPI_PA  , UL1_MIPI_PORT0, REG_W  ,    MIPI_USID_PA0   , { { 19224 ,{0x1C, 0x38}}, { 19362 ,{0x1C, 0x38}}, { 19500 ,{0x1C, 0x38}}, { 19638 ,{0x1C, 0x38}}, { 19776 ,{0x1C, 0x38}}}},
-   { /* 1  */ MIPI_PA  , UL1_MIPI_PORT0, REG_W  ,    MIPI_USID_PA0   , { { 19224 ,{0x00, 0x00}}, { 19362 ,{0x00, 0x00}}, { 19500 ,{0x00, 0x00}}, { 19638 ,{0x00, 0x00}}, { 19776 ,{0x00, 0x00}}}},
-   { /* 2  */ MIPI_PA  , UL1_MIPI_PORT0, REG_W  ,    MIPI_USID_PA0   , { { 19224 ,{0x01, 0x00}}, { 19362 ,{0x01, 0x00}}, { 19500 ,{0x01, 0x00}}, { 19638 ,{0x01, 0x00}}, { 19776 ,{0x01, 0x00}}}},
-   { /* 3  */ MIPI_PA  , UL1_MIPI_PORT0, REG_W  ,    MIPI_USID_PA0   , { { 19224 ,{0x02, 0x00}}, { 19362 ,{0x02, 0x00}}, { 19500 ,{0x02, 0x00}}, { 19638 ,{0x02, 0x00}}, { 19776 ,{0x02, 0x00}}}},
-   { /* 4  */ MIPI_PA  , UL1_MIPI_PORT0, REG_W  ,    MIPI_USID_PA0   , { { 19224 ,{0x03, 0x00}}, { 19362 ,{0x03, 0x00}}, { 19500 ,{0x03, 0x00}}, { 19638 ,{0x03, 0x00}}, { 19776 ,{0x03, 0x00}}}},
-   { /* 5  */ MIPI_ASM , UL1_MIPI_PORT1, REG_W  ,    MIPI_USID_ASM0  , { { 19224 ,{0x1C, 0x38}}, { 19362 ,{0x1C, 0x38}}, { 19500 ,{0x1C, 0x38}}, { 19638 ,{0x1C, 0x38}}, { 19776 ,{0x1C, 0x38}}}},
-   { /* 6  */ MIPI_ASM , UL1_MIPI_PORT1, REG_W  ,    MIPI_USID_ASM0  , { { 19224 ,{0x00, 0x02}}, { 19362 ,{0x00, 0x02}}, { 19500 ,{0x00, 0x02}}, { 19638 ,{0x00, 0x02}}, { 19776 ,{0x00, 0x02}}}},
+   { /* 0  */ MIPI_PA  , UL1_MIPI_PORT0, REG_W  ,    MIPI_USID_ASM0  , { { 19224 ,{0x1C, 0x38}}, { 19362 ,{0x1C, 0x38}}, { 19500 ,{0x1C, 0x38}}, { 19638 ,{0x1C, 0x38}}, { 19776 ,{0x1C, 0x38}}}},
+   { /* 1  */ MIPI_PA  , UL1_MIPI_PORT0, REG_W  ,    MIPI_USID_ASM0  , { { 19224 ,{0x00, 0x00}}, { 19362 ,{0x00, 0x00}}, { 19500 ,{0x00, 0x00}}, { 19638 ,{0x00, 0x00}}, { 19776 ,{0x00, 0x00}}}},
+   { /* 2  */ MIPI_PA  , UL1_MIPI_PORT0, REG_W  ,    MIPI_USID_ASM0  , { { 19224 ,{0x01, 0x00}}, { 19362 ,{0x01, 0x00}}, { 19500 ,{0x01, 0x00}}, { 19638 ,{0x01, 0x00}}, { 19776 ,{0x01, 0x00}}}},
+   { /* 3  */ MIPI_PA  , UL1_MIPI_PORT0, REG_W  ,    MIPI_USID_ASM0  , { { 19224 ,{0x02, 0x00}}, { 19362 ,{0x02, 0x00}}, { 19500 ,{0x02, 0x00}}, { 19638 ,{0x02, 0x00}}, { 19776 ,{0x02, 0x00}}}},
+   { /* 4  */ MIPI_PA  , UL1_MIPI_PORT0, REG_W  ,    MIPI_USID_ASM0  , { { 19224 ,{0x03, 0x00}}, { 19362 ,{0x03, 0x00}}, { 19500 ,{0x03, 0x00}}, { 19638 ,{0x03, 0x00}}, { 19776 ,{0x03, 0x00}}}},
+   { /* 5  */ MIPI_ASM , UL1_MIPI_PORT1, REG_W  ,    MIPI_USID_PA0   , { { 19224 ,{0x1C, 0x38}}, { 19362 ,{0x1C, 0x38}}, { 19500 ,{0x1C, 0x38}}, { 19638 ,{0x1C, 0x38}}, { 19776 ,{0x1C, 0x38}}}},
+   { /* 6  */ MIPI_ASM , UL1_MIPI_PORT1, REG_W  ,    MIPI_USID_PA0   , { { 19224 ,{0x00, 0x0D}}, { 19362 ,{0x00, 0x0D}}, { 19500 ,{0x00, 0x0D}}, { 19638 ,{0x00, 0x0D}}, { 19776 ,{0x00, 0x0D}}}},
    { /* 7  */ MIPI_NULL, MIPI_DATA_NULL, SEQ_NULL,   MIPI_USID_INIT0 , { { 19224 ,{0x00, 0x00}}, { 19362 ,{0x00, 0x00}}, { 19500 ,{0x00, 0x00}}, { 19638 ,{0x00, 0x00}}, { 19776 ,{0x00, 0x00}}}},
    { /* 8  */ MIPI_NULL, MIPI_DATA_NULL, SEQ_NULL,   MIPI_USID_INIT0 , { { 19224 ,{0x00, 0x00}}, { 19362 ,{0x00, 0x00}}, { 19500 ,{0x00, 0x00}}, { 19638 ,{0x00, 0x00}}, { 19776 ,{0x00, 0x00}}}},
    { /* 9  */ MIPI_NULL, MIPI_DATA_NULL, SEQ_NULL,   MIPI_USID_INIT0 , { { 19224 ,{0x00, 0x00}}, { 19362 ,{0x00, 0x00}}, { 19500 ,{0x00, 0x00}}, { 19638 ,{0x00, 0x00}}, { 19776 ,{0x00, 0x00}}}},
@@ -1550,13 +1552,13 @@ UL1_MIPI_DATA_SUBBAND_TABLE_T UMTS_MIPI_TX_DATA_UMTSBand5_set1[UL1_MIPI_TX_DATA_
 UL1_MIPI_DATA_SUBBAND_TABLE_T UMTS_MIPI_TX_DATA_UMTSBand8[UL1_MIPI_TX_DATA_NUM] = 
 {
    //No.      elm type , port_sel      ,  data_seq  , user id,         { { sub 0 ,addr, data }},{ sub 1 ,addr, data }},{ sub 2 ,addr, data}}, { sub 3, addr, data}}, { sub 4, addr data  } }},   
-   { /* 0  */ MIPI_PA  , UL1_MIPI_PORT0, REG_W  ,    MIPI_USID_PA0   , { { 8824 ,{0x1C, 0x38}}, { 8899 ,{0x1C, 0x38}}, { 8975 ,{0x1C, 0x38}}, { 9050 ,{0x1C, 0x38}}, { 9126 ,{0x1C, 0x38}} }},
-   { /* 1  */ MIPI_PA  , UL1_MIPI_PORT0, REG_W  ,    MIPI_USID_PA0   , { { 8824 ,{0x00, 0x00}}, { 8899 ,{0x00, 0x00}}, { 8975 ,{0x00, 0x00}}, { 9050 ,{0x00, 0x00}}, { 9126 ,{0x00, 0x00}} }},
-   { /* 2  */ MIPI_PA  , UL1_MIPI_PORT0, REG_W  ,    MIPI_USID_PA0   , { { 8824 ,{0x01, 0x00}}, { 8899 ,{0x01, 0x00}}, { 8975 ,{0x01, 0x00}}, { 9050 ,{0x01, 0x00}}, { 9126 ,{0x01, 0x00}} }},
-   { /* 3  */ MIPI_PA  , UL1_MIPI_PORT0, REG_W  ,    MIPI_USID_PA0   , { { 8824 ,{0x02, 0x00}}, { 8899 ,{0x02, 0x00}}, { 8975 ,{0x02, 0x00}}, { 9050 ,{0x02, 0x00}}, { 9126 ,{0x02, 0x00}} }},
-   { /* 4  */ MIPI_PA  , UL1_MIPI_PORT0, REG_W  ,    MIPI_USID_PA0   , { { 8824 ,{0x03, 0x00}}, { 8899 ,{0x03, 0x00}}, { 8975 ,{0x03, 0x00}}, { 9050 ,{0x03, 0x00}}, { 9126 ,{0x03, 0x00}} }},
-   { /* 5  */ MIPI_ASM , UL1_MIPI_PORT1, REG_W  ,    MIPI_USID_ASM0  , { { 8824 ,{0x1C, 0x38}}, { 8899 ,{0x1C, 0x38}}, { 8975 ,{0x1C, 0x38}}, { 9050 ,{0x1C, 0x38}}, { 9126 ,{0x1C, 0x38}} }},
-   { /* 6  */ MIPI_ASM , UL1_MIPI_PORT1, REG_W  ,    MIPI_USID_ASM0  , { { 8824 ,{0x00, 0x0D}}, { 8899 ,{0x00, 0x0D}}, { 8975 ,{0x00, 0x0D}}, { 9050 ,{0x00, 0x0D}}, { 9126 ,{0x00, 0x0D}} }},
+   { /* 0  */ MIPI_PA  , UL1_MIPI_PORT0, REG_W  ,    MIPI_USID_ASM0  , { { 8824 ,{0x1C, 0x38}}, { 8899 ,{0x1C, 0x38}}, { 8975 ,{0x1C, 0x38}}, { 9050 ,{0x1C, 0x38}}, { 9126 ,{0x1C, 0x38}} }},
+   { /* 1  */ MIPI_PA  , UL1_MIPI_PORT0, REG_W  ,    MIPI_USID_ASM0  , { { 8824 ,{0x00, 0x00}}, { 8899 ,{0x00, 0x00}}, { 8975 ,{0x00, 0x00}}, { 9050 ,{0x00, 0x00}}, { 9126 ,{0x00, 0x00}} }},
+   { /* 2  */ MIPI_PA  , UL1_MIPI_PORT0, REG_W  ,    MIPI_USID_ASM0  , { { 8824 ,{0x01, 0x00}}, { 8899 ,{0x01, 0x00}}, { 8975 ,{0x01, 0x00}}, { 9050 ,{0x01, 0x00}}, { 9126 ,{0x01, 0x00}} }},
+   { /* 3  */ MIPI_PA  , UL1_MIPI_PORT0, REG_W  ,    MIPI_USID_ASM0  , { { 8824 ,{0x02, 0x00}}, { 8899 ,{0x02, 0x00}}, { 8975 ,{0x02, 0x00}}, { 9050 ,{0x02, 0x00}}, { 9126 ,{0x02, 0x00}} }},
+   { /* 4  */ MIPI_PA  , UL1_MIPI_PORT0, REG_W  ,    MIPI_USID_ASM0  , { { 8824 ,{0x03, 0x00}}, { 8899 ,{0x03, 0x00}}, { 8975 ,{0x03, 0x00}}, { 9050 ,{0x03, 0x00}}, { 9126 ,{0x03, 0x00}} }},
+   { /* 5  */ MIPI_ASM , UL1_MIPI_PORT1, REG_W  ,    MIPI_USID_PA0   , { { 8824 ,{0x1C, 0x38}}, { 8899 ,{0x1C, 0x38}}, { 8975 ,{0x1C, 0x38}}, { 9050 ,{0x1C, 0x38}}, { 9126 ,{0x1C, 0x38}} }},
+   { /* 6  */ MIPI_ASM , UL1_MIPI_PORT1, REG_W  ,    MIPI_USID_PA0   , { { 8824 ,{0x00, 0x05}}, { 8899 ,{0x00, 0x05}}, { 8975 ,{0x00, 0x05}}, { 9050 ,{0x00, 0x05}}, { 9126 ,{0x00, 0x05}} }},
    { /* 7  */ MIPI_NULL, MIPI_DATA_NULL, SEQ_NULL,   MIPI_USID_INIT0 , { { 8824 ,{0x00, 0x00}}, { 8899 ,{0x00, 0x00}}, { 8975 ,{0x00, 0x00}}, { 9050 ,{0x00, 0x00}}, { 9126 ,{0x00, 0x00}} }},
    { /* 8  */ MIPI_NULL, MIPI_DATA_NULL, SEQ_NULL,   MIPI_USID_INIT0 , { { 8824 ,{0x00, 0x00}}, { 8899 ,{0x00, 0x00}}, { 8975 ,{0x00, 0x00}}, { 9050 ,{0x00, 0x00}}, { 9126 ,{0x00, 0x00}} }},
    { /* 9  */ MIPI_NULL, MIPI_DATA_NULL, SEQ_NULL,   MIPI_USID_INIT0 , { { 8824 ,{0x00, 0x00}}, { 8899 ,{0x00, 0x00}}, { 8975 ,{0x00, 0x00}}, { 9050 ,{0x00, 0x00}}, { 9126 ,{0x00, 0x00}} }},
@@ -1669,38 +1671,38 @@ UL1_UMTS_MIPI_TPC_T UMTS_MIPI_TPC_UMTSBand1 =
   /* Data */
   {
    //elm type  , port_sel       , data_seq, user id,         {{sub 0, addr, data}}, {{sub 1, addr, data}}, {{sub 2, addr, data} , {{sub 3, addr, data}}, {{sub 4, addr, data}
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x00, 0x00}}, {19362, {0x00, 0x00}}, {19500, {0x00, 0x00}}, {19638, {0x00, 0x00}}, {19776, {0x00, 0x00}}}},  /*L7, TPC IDX 0*/
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x01, 0x1F}}, {19362, {0x01, 0x1F}}, {19500, {0x01, 0x1F}}, {19638, {0x01, 0x1F}}, {19776, {0x01, 0x1F}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x02, 0xFD}}, {19362, {0x02, 0xFD}}, {19500, {0x02, 0xFD}}, {19638, {0x02, 0xFD}}, {19776, {0x02, 0xFD}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x03, 0x21}}, {19362, {0x03, 0x21}}, {19500, {0x03, 0x21}}, {19638, {0x03, 0x21}}, {19776, {0x03, 0x21}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x00, 0x00}}, {19362, {0x00, 0x00}}, {19500, {0x00, 0x00}}, {19638, {0x00, 0x00}}, {19776, {0x00, 0x00}}}},  /*L6, TPC IDX 2*/
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x01, 0x1F}}, {19362, {0x01, 0x1F}}, {19500, {0x01, 0x1F}}, {19638, {0x01, 0x1F}}, {19776, {0x01, 0x1F}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x02, 0xFD}}, {19362, {0x02, 0xFD}}, {19500, {0x02, 0xFD}}, {19638, {0x02, 0xFD}}, {19776, {0x02, 0xFD}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x03, 0x21}}, {19362, {0x03, 0x21}}, {19500, {0x03, 0x21}}, {19638, {0x03, 0x21}}, {19776, {0x03, 0x21}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x00, 0x00}}, {19362, {0x00, 0x00}}, {19500, {0x00, 0x00}}, {19638, {0x00, 0x00}}, {19776, {0x00, 0x00}}}},  /*L5, TPC IDX 4*/
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x01, 0x1F}}, {19362, {0x01, 0x1F}}, {19500, {0x01, 0x1F}}, {19638, {0x01, 0x1F}}, {19776, {0x01, 0x1F}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x02, 0xFD}}, {19362, {0x02, 0xFD}}, {19500, {0x02, 0xFD}}, {19638, {0x02, 0xFD}}, {19776, {0x02, 0xFD}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x03, 0x21}}, {19362, {0x03, 0x21}}, {19500, {0x03, 0x21}}, {19638, {0x03, 0x21}}, {19776, {0x03, 0x21}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x00, 0x00}}, {19362, {0x00, 0x00}}, {19500, {0x00, 0x00}}, {19638, {0x00, 0x00}}, {19776, {0x00, 0x00}}}},  /*L4, TPC IDX 6*/
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x01, 0x1F}}, {19362, {0x01, 0x1F}}, {19500, {0x01, 0x1F}}, {19638, {0x01, 0x1F}}, {19776, {0x01, 0x1F}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x02, 0xDB}}, {19362, {0x02, 0xDB}}, {19500, {0x02, 0xDB}}, {19638, {0x02, 0xDB}}, {19776, {0x02, 0xDB}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x03, 0x21}}, {19362, {0x03, 0x21}}, {19500, {0x03, 0x21}}, {19638, {0x03, 0x21}}, {19776, {0x03, 0x21}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x00, 0x00}}, {19362, {0x00, 0x00}}, {19500, {0x00, 0x00}}, {19638, {0x00, 0x00}}, {19776, {0x00, 0x00}}}},  /*L3, TPC IDX 9*/
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x01, 0x1F}}, {19362, {0x01, 0x1F}}, {19500, {0x01, 0x1F}}, {19638, {0x01, 0x1F}}, {19776, {0x01, 0x1F}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x02, 0xCE}}, {19362, {0x02, 0xCE}}, {19500, {0x02, 0xCE}}, {19638, {0x02, 0xCE}}, {19776, {0x02, 0xCE}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x03, 0x20}}, {19362, {0x03, 0x20}}, {19500, {0x03, 0x20}}, {19638, {0x03, 0x20}}, {19776, {0x03, 0x20}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x00, 0x00}}, {19362, {0x00, 0x00}}, {19500, {0x00, 0x00}}, {19638, {0x00, 0x00}}, {19776, {0x00, 0x00}}}},  /*L2, TPC IDX 15, Hyst1*/
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x01, 0x1F}}, {19362, {0x01, 0x1F}}, {19500, {0x01, 0x1F}}, {19638, {0x01, 0x1F}}, {19776, {0x01, 0x1F}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x02, 0xBB}}, {19362, {0x02, 0xBB}}, {19500, {0x02, 0xBB}}, {19638, {0x02, 0xBB}}, {19776, {0x02, 0xBB}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x03, 0x20}}, {19362, {0x03, 0x20}}, {19500, {0x03, 0x20}}, {19638, {0x03, 0x20}}, {19776, {0x03, 0x20}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x00, 0x00}}, {19362, {0x00, 0x00}}, {19500, {0x00, 0x00}}, {19638, {0x00, 0x00}}, {19776, {0x00, 0x00}}}},  /*L1, TPC IDX 18*/
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x01, 0x1F}}, {19362, {0x01, 0x1F}}, {19500, {0x01, 0x1F}}, {19638, {0x01, 0x1F}}, {19776, {0x01, 0x1F}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x02, 0x7A}}, {19362, {0x02, 0x7A}}, {19500, {0x02, 0x7A}}, {19638, {0x02, 0x7A}}, {19776, {0x02, 0x7A}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x03, 0x24}}, {19362, {0x03, 0x24}}, {19500, {0x03, 0x24}}, {19638, {0x03, 0x24}}, {19776, {0x03, 0x24}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x00, 0x00}}, {19362, {0x00, 0x00}}, {19500, {0x00, 0x00}}, {19638, {0x00, 0x00}}, {19776, {0x00, 0x00}}}},  /*L0, TPC IDX 25, Hyst2*/
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x01, 0x1F}}, {19362, {0x01, 0x1F}}, {19500, {0x01, 0x1F}}, {19638, {0x01, 0x1F}}, {19776, {0x01, 0x1F}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x02, 0x89}}, {19362, {0x02, 0x89}}, {19500, {0x02, 0x89}}, {19638, {0x02, 0x89}}, {19776, {0x02, 0x89}}}},
-    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{19224, {0x03, 0x20}}, {19362, {0x03, 0x20}}, {19500, {0x03, 0x20}}, {19638, {0x03, 0x20}}, {19776, {0x03, 0x20}}}},
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x00, 0x5C}}, {19362, {0x00, 0x5C}}, {19500, {0x00, 0x5C}}, {19638, {0x00, 0x5C}}, {19776, {0x00, 0x5C}}}},  /*L7, TPC IDX 0*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x01, 0x76}}, {19362, {0x01, 0x76}}, {19500, {0x01, 0x76}}, {19638, {0x01, 0x76}}, {19776, {0x01, 0x76}}}}, /*1 */
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x02, 0xC0}}, {19362, {0x02, 0xC0}}, {19500, {0x02, 0xC0}}, {19638, {0x02, 0xC0}}, {19776, {0x02, 0xC0}}}}, /*2*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x03, 0x85}}, {19362, {0x03, 0x85}}, {19500, {0x03, 0x85}}, {19638, {0x03, 0x85}}, {19776, {0x03, 0x85}}}}, /*3*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x00, 0x5C}}, {19362, {0x00, 0x5C}}, {19500, {0x00, 0x5C}}, {19638, {0x00, 0x5C}}, {19776, {0x00, 0x5C}}}},  /*L6, TPC IDX 2*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x01, 0x76}}, {19362, {0x01, 0x76}}, {19500, {0x01, 0x76}}, {19638, {0x01, 0x76}}, {19776, {0x01, 0x76}}}}, /*5*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x02, 0xC0}}, {19362, {0x02, 0xC0}}, {19500, {0x02, 0xC0}}, {19638, {0x02, 0xC0}}, {19776, {0x02, 0xC0}}}}, /*6*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x03, 0x85}}, {19362, {0x03, 0x85}}, {19500, {0x03, 0x85}}, {19638, {0x03, 0x85}}, {19776, {0x03, 0x85}}}}, /*7*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x00, 0x5C}}, {19362, {0x00, 0x5C}}, {19500, {0x00, 0x5C}}, {19638, {0x00, 0x5C}}, {19776, {0x00, 0x5C}}}},  /*L5, TPC IDX 4*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x01, 0x76}}, {19362, {0x01, 0x76}}, {19500, {0x01, 0x76}}, {19638, {0x01, 0x76}}, {19776, {0x01, 0x76}}}}, /*9*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x02, 0xC0}}, {19362, {0x02, 0xC0}}, {19500, {0x02, 0xC0}}, {19638, {0x02, 0xC0}}, {19776, {0x02, 0xC0}}}}, /*10*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x03, 0x85}}, {19362, {0x03, 0x85}}, {19500, {0x03, 0x85}}, {19638, {0x03, 0x85}}, {19776, {0x03, 0x85}}}}, /*11*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x00, 0x5C}}, {19362, {0x00, 0x5C}}, {19500, {0x00, 0x5C}}, {19638, {0x00, 0x5C}}, {19776, {0x00, 0x5C}}}},  /*L4, TPC IDX 6*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x01, 0x76}}, {19362, {0x01, 0x76}}, {19500, {0x01, 0x76}}, {19638, {0x01, 0x76}}, {19776, {0x01, 0x76}}}}, /*13*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x02, 0xC0}}, {19362, {0x02, 0xC0}}, {19500, {0x02, 0xC0}}, {19638, {0x02, 0xC0}}, {19776, {0x02, 0xC0}}}}, /*14*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x03, 0x85}}, {19362, {0x03, 0x85}}, {19500, {0x03, 0x85}}, {19638, {0x03, 0x85}}, {19776, {0x03, 0x85}}}}, /*15*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x00, 0x5C}}, {19362, {0x00, 0x5C}}, {19500, {0x00, 0x5C}}, {19638, {0x00, 0x5C}}, {19776, {0x00, 0x5C}}}},  /*L3, TPC IDX 9*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x01, 0x76}}, {19362, {0x01, 0x76}}, {19500, {0x01, 0x76}}, {19638, {0x01, 0x76}}, {19776, {0x01, 0x76}}}}, /*17*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x02, 0xC0}}, {19362, {0x02, 0xC0}}, {19500, {0x02, 0xC0}}, {19638, {0x02, 0xC0}}, {19776, {0x02, 0xC0}}}}, /*18*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x03, 0x85}}, {19362, {0x03, 0x85}}, {19500, {0x03, 0x85}}, {19638, {0x03, 0x85}}, {19776, {0x03, 0x85}}}},/*19*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x00, 0x5C}}, {19362, {0x00, 0x5C}}, {19500, {0x00, 0x5C}}, {19638, {0x00, 0x5C}}, {19776, {0x00, 0x5C}}}},  /*L2, TPC IDX 15, Hyst1*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x01, 0x24}}, {19362, {0x01, 0x24}}, {19500, {0x01, 0x24}}, {19638, {0x01, 0x24}}, {19776, {0x01, 0x24}}}},/*21*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x02, 0xC0}}, {19362, {0x02, 0xC0}}, {19500, {0x02, 0xC0}}, {19638, {0x02, 0xC0}}, {19776, {0x02, 0xC0}}}},/*22*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x03, 0x80}}, {19362, {0x03, 0x80}}, {19500, {0x03, 0x80}}, {19638, {0x03, 0x80}}, {19776, {0x03, 0x80}}}},/*23*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x00, 0x5C}}, {19362, {0x00, 0x5C}}, {19500, {0x00, 0x5C}}, {19638, {0x00, 0x5C}}, {19776, {0x00, 0x5C}}}},  /*L1, TPC IDX 18*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x01, 0x24}}, {19362, {0x01, 0x24}}, {19500, {0x01, 0x24}}, {19638, {0x01, 0x24}}, {19776, {0x01, 0x24}}}},/*25*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x02, 0xC0}}, {19362, {0x02, 0xC0}}, {19500, {0x02, 0xC0}}, {19638, {0x02, 0xC0}}, {19776, {0x02, 0xC0}}}},/*26*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x03, 0x80}}, {19362, {0x03, 0x80}}, {19500, {0x03, 0x80}}, {19638, {0x03, 0x80}}, {19776, {0x03, 0x80}}}},/*27*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x00, 0x5C}}, {19362, {0x00, 0x5C}}, {19500, {0x00, 0x5C}}, {19638, {0x00, 0x5C}}, {19776, {0x00, 0x5C}}}},  /*L0, TPC IDX 25, Hyst2*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x01, 0x14}}, {19362, {0x01, 0x14}}, {19500, {0x01, 0x14}}, {19638, {0x01, 0x14}}, {19776, {0x01, 0x14}}}},/*29*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x02, 0xC0}}, {19362, {0x02, 0xC0}}, {19500, {0x02, 0xC0}}, {19638, {0x02, 0xC0}}, {19776, {0x02, 0xC0}}}},/*30*/
+    {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{19224, {0x03, 0x80}}, {19362, {0x03, 0x80}}, {19500, {0x03, 0x80}}, {19638, {0x03, 0x80}}, {19776, {0x03, 0x80}}}},/*31*/
     {MIPI_NULL , MIPI_DATA_NULL , SEQ_NULL, MIPI_USID_INIT0, {{19224, {0x00, 0x00}}, {19362, {0x00, 0x00}}, {19500, {0x00, 0x00}}, {19638, {0x00, 0x00}}, {19776, {0x00, 0x00}}}},
     {MIPI_NULL , MIPI_DATA_NULL , SEQ_NULL, MIPI_USID_INIT0, {{19224, {0x00, 0x00}}, {19362, {0x00, 0x00}}, {19500, {0x00, 0x00}}, {19638, {0x00, 0x00}}, {19776, {0x00, 0x00}}}},
     {MIPI_NULL , MIPI_DATA_NULL , SEQ_NULL, MIPI_USID_INIT0, {{19224, {0x00, 0x00}}, {19362, {0x00, 0x00}}, {19500, {0x00, 0x00}}, {19638, {0x00, 0x00}}, {19776, {0x00, 0x00}}}},
@@ -2232,38 +2234,38 @@ UL1_UMTS_MIPI_TPC_T UMTS_MIPI_TPC_UMTSBand8 =
    /* Data */
    {                                                                                                                                                                               
       //elm type  , port_sel     , data_seq, user id,         {{sub 0, addr, data}}, {{sub 1, addr, data}}, {{sub 2, addr, data} , {{sub 3, addr, data}}, {{sub 4, addr, data}     
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x00, 0x0C}}, {8899, {0x00, 0x0C}}, {8975, {0x00, 0x0C}}, {9050, {0x00, 0x0C}}, {9126, {0x00, 0x0C}} }},  /*L7, TPC IDX 0*/        
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x01, 0x0F}}, {8899, {0x01, 0x0F}}, {8975, {0x01, 0x0F}}, {9050, {0x01, 0x0F}}, {9126, {0x01, 0x0F}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x02, 0xCE}}, {8899, {0x02, 0xCE}}, {8975, {0x02, 0xCE}}, {9050, {0x02, 0xCE}}, {9126, {0x02, 0xCE}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x03, 0x11}}, {8899, {0x03, 0x11}}, {8975, {0x03, 0x11}}, {9050, {0x03, 0x11}}, {9126, {0x03, 0x11}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x00, 0x0C}}, {8899, {0x00, 0x0C}}, {8975, {0x00, 0x0C}}, {9050, {0x00, 0x0C}}, {9126, {0x00, 0x0C}} }},  /*L6, TPC IDX 2*/        
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x01, 0x0F}}, {8899, {0x01, 0x0F}}, {8975, {0x01, 0x0F}}, {9050, {0x01, 0x0F}}, {9126, {0x01, 0x0F}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x02, 0xCE}}, {8899, {0x02, 0xCE}}, {8975, {0x02, 0xCE}}, {9050, {0x02, 0xCE}}, {9126, {0x02, 0xCE}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x03, 0x11}}, {8899, {0x03, 0x11}}, {8975, {0x03, 0x11}}, {9050, {0x03, 0x11}}, {9126, {0x03, 0x11}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x00, 0x0C}}, {8899, {0x00, 0x0C}}, {8975, {0x00, 0x0C}}, {9050, {0x00, 0x0C}}, {9126, {0x00, 0x0C}} }},  /*L5, TPC IDX 4*/        
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x01, 0x0F}}, {8899, {0x01, 0x0F}}, {8975, {0x01, 0x0F}}, {9050, {0x01, 0x0F}}, {9126, {0x01, 0x0F}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x02, 0x7C}}, {8899, {0x02, 0x7C}}, {8975, {0x02, 0x7C}}, {9050, {0x02, 0x7C}}, {9126, {0x02, 0x7C}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x03, 0x15}}, {8899, {0x03, 0x15}}, {8975, {0x03, 0x15}}, {9050, {0x03, 0x15}}, {9126, {0x03, 0x15}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x00, 0x0C}}, {8899, {0x00, 0x0C}}, {8975, {0x00, 0x0C}}, {9050, {0x00, 0x0C}}, {9126, {0x00, 0x0C}} }},  /*L4, TPC IDX 6*/        
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x01, 0x0F}}, {8899, {0x01, 0x0F}}, {8975, {0x01, 0x0F}}, {9050, {0x01, 0x0F}}, {9126, {0x01, 0x0F}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x02, 0xBF}}, {8899, {0x02, 0xBF}}, {8975, {0x02, 0xBF}}, {9050, {0x02, 0xBF}}, {9126, {0x02, 0xBF}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x03, 0x10}}, {8899, {0x03, 0x10}}, {8975, {0x03, 0x10}}, {9050, {0x03, 0x10}}, {9126, {0x03, 0x10}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x00, 0x0C}}, {8899, {0x00, 0x0C}}, {8975, {0x00, 0x0C}}, {9050, {0x00, 0x0C}}, {9126, {0x00, 0x0C}} }},  /*L3, TPC IDX 9*/        
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x01, 0x0F}}, {8899, {0x01, 0x0F}}, {8975, {0x01, 0x0F}}, {9050, {0x01, 0x0F}}, {9126, {0x01, 0x0F}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x02, 0x7C}}, {8899, {0x02, 0x7C}}, {8975, {0x02, 0x7C}}, {9050, {0x02, 0x7C}}, {9126, {0x02, 0x7C}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x03, 0x14}}, {8899, {0x03, 0x14}}, {8975, {0x03, 0x14}}, {9050, {0x03, 0x14}}, {9126, {0x03, 0x14}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x00, 0x0C}}, {8899, {0x00, 0x0C}}, {8975, {0x00, 0x0C}}, {9050, {0x00, 0x0C}}, {9126, {0x00, 0x0C}} }},  /*L2, TPC IDX 15, Hyst1*/
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x01, 0x0F}}, {8899, {0x01, 0x0F}}, {8975, {0x01, 0x0F}}, {9050, {0x01, 0x0F}}, {9126, {0x01, 0x0F}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x02, 0x97}}, {8899, {0x02, 0x97}}, {8975, {0x02, 0x97}}, {9050, {0x02, 0x97}}, {9126, {0x02, 0x97}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x03, 0x11}}, {8899, {0x03, 0x11}}, {8975, {0x03, 0x11}}, {9050, {0x03, 0x11}}, {9126, {0x03, 0x11}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x00, 0x0C}}, {8899, {0x00, 0x0C}}, {8975, {0x00, 0x0C}}, {9050, {0x00, 0x0C}}, {9126, {0x00, 0x0C}} }},  /*L1, TPC IDX 18*/       
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x01, 0x0F}}, {8899, {0x01, 0x0F}}, {8975, {0x01, 0x0F}}, {9050, {0x01, 0x0F}}, {9126, {0x01, 0x0F}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x02, 0x99}}, {8899, {0x02, 0x99}}, {8975, {0x02, 0x99}}, {9050, {0x02, 0x99}}, {9126, {0x02, 0x99}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x03, 0x10}}, {8899, {0x03, 0x10}}, {8975, {0x03, 0x10}}, {9050, {0x03, 0x10}}, {9126, {0x03, 0x10}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x00, 0x0C}}, {8899, {0x00, 0x0C}}, {8975, {0x00, 0x0C}}, {9050, {0x00, 0x0C}}, {9126, {0x00, 0x0C}} }},  /*L0, TPC IDX 25, Hyst2*/
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x01, 0x0F}}, {8899, {0x01, 0x0F}}, {8975, {0x01, 0x0F}}, {9050, {0x01, 0x0F}}, {9126, {0x01, 0x0F}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x02, 0x99}}, {8899, {0x02, 0x99}}, {8975, {0x02, 0x99}}, {9050, {0x02, 0x99}}, {9126, {0x02, 0x99}} }},                           
-     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_PA0,   {{8824, {0x03, 0x10}}, {8899, {0x03, 0x10}}, {8975, {0x03, 0x10}}, {9050, {0x03, 0x10}}, {9126, {0x03, 0x10}} }},                           
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x00, 0x24}}, {8899, {0x00, 0x24}}, {8975, {0x00, 0x24}}, {9050, {0x00, 0x24}}, {9126, {0x00, 0x24}} }},  /*L7, TPC IDX 0*/        
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x01, 0x0F}}, {8899, {0x01, 0x0F}}, {8975, {0x01, 0x0F}}, {9050, {0x01, 0x0F}}, {9126, {0x01, 0x0F}} }},  /*1*/                         
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x02, 0x20}}, {8899, {0x02, 0x20}}, {8975, {0x02, 0x20}}, {9050, {0x02, 0x20}}, {9126, {0x02, 0x20}} }},       /*2*/                    
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x03, 0x10}}, {8899, {0x03, 0x10}}, {8975, {0x03, 0x10}}, {9050, {0x03, 0x10}}, {9126, {0x03, 0x10}} }},            /*3*/               
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x00, 0x24}}, {8899, {0x00, 0x24}}, {8975, {0x00, 0x24}}, {9050, {0x00, 0x24}}, {9126, {0x00, 0x24}} }},  /*L6, TPC IDX 2*/        
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x01, 0x0F}}, {8899, {0x01, 0x0F}}, {8975, {0x01, 0x0F}}, {9050, {0x01, 0x0F}}, {9126, {0x01, 0x0F}} }},/*5*/                           
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x02, 0x20}}, {8899, {0x02, 0x20}}, {8975, {0x02, 0x20}}, {9050, {0x02, 0x20}}, {9126, {0x02, 0x20}} }},     /*6*/                      
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x03, 0x10}}, {8899, {0x03, 0x10}}, {8975, {0x03, 0x10}}, {9050, {0x03, 0x10}}, {9126, {0x03, 0x10}} }},          /*7*/                 
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x00, 0x24}}, {8899, {0x00, 0x24}}, {8975, {0x00, 0x24}}, {9050, {0x00, 0x24}}, {9126, {0x00, 0x24}} }},  /*L5, TPC IDX 4*/        
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x01, 0x0F}}, {8899, {0x01, 0x0F}}, {8975, {0x01, 0x0F}}, {9050, {0x01, 0x0F}}, {9126, {0x01, 0x0F}} }},/*9*/                           
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x02, 0x20}}, {8899, {0x02, 0x20}}, {8975, {0x02, 0x20}}, {9050, {0x02, 0x20}}, {9126, {0x02, 0x20}} }},     /*10*/                      
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x03, 0x10}}, {8899, {0x03, 0x10}}, {8975, {0x03, 0x10}}, {9050, {0x03, 0x10}}, {9126, {0x03, 0x10}} }},           /*11*/                
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x00, 0x24}}, {8899, {0x00, 0x24}}, {8975, {0x00, 0x24}}, {9050, {0x00, 0x24}}, {9126, {0x00, 0x24}} }},  /*L4, TPC IDX 6*/        
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x01, 0x0F}}, {8899, {0x01, 0x0F}}, {8975, {0x01, 0x0F}}, {9050, {0x01, 0x0F}}, {9126, {0x01, 0x0F}} }},/*13*/                           
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x02, 0x20}}, {8899, {0x02, 0x20}}, {8975, {0x02, 0x20}}, {9050, {0x02, 0x20}}, {9126, {0x02, 0x20}} }},      /*14*/                     
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x03, 0x00}}, {8899, {0x03, 0x00}}, {8975, {0x03, 0x00}}, {9050, {0x03, 0x00}}, {9126, {0x03, 0x00}} }},            /*15*/               
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x00, 0x24}}, {8899, {0x00, 0x24}}, {8975, {0x00, 0x24}}, {9050, {0x00, 0x24}}, {9126, {0x00, 0x24}} }},  /*L3, TPC IDX 9*/        
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x01, 0x0F}}, {8899, {0x01, 0x0F}}, {8975, {0x01, 0x0F}}, {9050, {0x01, 0x0F}}, {9126, {0x01, 0x0F}} }}, /*17*/                          
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x02, 0x20}}, {8899, {0x02, 0x20}}, {8975, {0x02, 0x20}}, {9050, {0x02, 0x20}}, {9126, {0x02, 0x20}} }},       /*18*/                    
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x03, 0x00}}, {8899, {0x03, 0x00}}, {8975, {0x03, 0x00}}, {9050, {0x03, 0x00}}, {9126, {0x03, 0x00}} }},             /*19*/              
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x00, 0x24}}, {8899, {0x00, 0x24}}, {8975, {0x00, 0x24}}, {9050, {0x00, 0x24}}, {9126, {0x00, 0x24}} }},  /*L2, TPC IDX 15, Hyst1*/
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x01, 0x0F}}, {8899, {0x01, 0x0F}}, {8975, {0x01, 0x0F}}, {9050, {0x01, 0x0F}}, {9126, {0x01, 0x0F}} }}, /*21*/                          
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x02, 0x20}}, {8899, {0x02, 0x20}}, {8975, {0x02, 0x20}}, {9050, {0x02, 0x20}}, {9126, {0x02, 0x20}} }},       /*22*/                    
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x03, 0x00}}, {8899, {0x03, 0x00}}, {8975, {0x03, 0x00}}, {9050, {0x03, 0x00}}, {9126, {0x03, 0x00}} }},             /*23*/              
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x00, 0x24}}, {8899, {0x00, 0x24}}, {8975, {0x00, 0x24}}, {9050, {0x00, 0x24}}, {9126, {0x00, 0x24}} }},  /*L1, TPC IDX 18*/       
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x01, 0x0F}}, {8899, {0x01, 0x0F}}, {8975, {0x01, 0x0F}}, {9050, {0x01, 0x0F}}, {9126, {0x01, 0x0F}} }}, /*25*/                          
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x02, 0x20}}, {8899, {0x02, 0x20}}, {8975, {0x02, 0x20}}, {9050, {0x02, 0x20}}, {9126, {0x02, 0x20}} }},       /*26*/                    
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x03, 0x00}}, {8899, {0x03, 0x00}}, {8975, {0x03, 0x00}}, {9050, {0x03, 0x00}}, {9126, {0x03, 0x00}} }},             /*27*/              
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x00, 0x24}}, {8899, {0x00, 0x24}}, {8975, {0x00, 0x24}}, {9050, {0x00, 0x24}}, {9126, {0x00, 0x24}} }},  /*L0, TPC IDX 25, Hyst2*/
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x01, 0x0F}}, {8899, {0x01, 0x0F}}, {8975, {0x01, 0x0F}}, {9050, {0x01, 0x0F}}, {9126, {0x01, 0x0F}} }}, /*29*/                          
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x02, 0x20}}, {8899, {0x02, 0x20}}, {8975, {0x02, 0x20}}, {9050, {0x02, 0x20}}, {9126, {0x02, 0x20}} }},       /*30*/                    
+     {MIPI_PA   , UL1_MIPI_PORT0 , REG_W ,   MIPI_USID_ASM0,   {{8824, {0x03, 0x00}}, {8899, {0x03, 0x00}}, {8975, {0x03, 0x00}}, {9050, {0x03, 0x00}}, {9126, {0x03, 0x00}} }},             /*31*/              
      {MIPI_NULL , MIPI_DATA_NULL , SEQ_NULL, MIPI_USID_INIT0, {{8824, {0x00, 0x00}}, {8899, {0x00, 0x00}}, {8975, {0x00, 0x00}}, {9050, {0x00, 0x00}}, {9126, {0x00, 0x00}} }},                           
      {MIPI_NULL , MIPI_DATA_NULL , SEQ_NULL, MIPI_USID_INIT0, {{8824, {0x00, 0x00}}, {8899, {0x00, 0x00}}, {8975, {0x00, 0x00}}, {9050, {0x00, 0x00}}, {9126, {0x00, 0x00}} }},                           
      {MIPI_NULL , MIPI_DATA_NULL , SEQ_NULL, MIPI_USID_INIT0, {{8824, {0x00, 0x00}}, {8899, {0x00, 0x00}}, {8975, {0x00, 0x00}}, {9050, {0x00, 0x00}}, {9126, {0x00, 0x00}} }},                           
