@@ -228,11 +228,11 @@ sGGE_MIPI_CTRL_TABLE_BAND GGE_MIPI_CTRL_TABLE_GSM900=
       },
       /* GGE_MIPI_CTRL_TABLE_GSM900.mipi_rx_ctrl_table.mipi_rxctrl_data[] */
       {  	/*    No.    elm type  ,  port select    	   ,  data format      	        ,usid		      ,{  { subband arfcn, addr, data }, { subband arfcn, addr, data }, { subband arfcn, addr, data }, { subband arfcn, addr, data }, { subband arfcn, addr, data },   */
-         {  /*  0 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_ASM0 ,{  {    124           , 0x1C, 0x38 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
-         {  /*  1 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_ASM0 ,{  {    124           , 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
-         {  /*  2 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_ASM0 ,{  {    124           , 0x00, 0x0D }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
-         {  /*  3 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_ASM0 ,{  {    124           , 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
-         {  /*  4 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_ASM0 ,{  {    124           , 0x1C, 0xB8 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  0 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0 ,{  {    124           , 0x1C, 0x38 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  1 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0 ,{  {    124           , 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  2 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0 ,{  {    124           , 0x00, 0x05 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  3 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0 ,{  {    124           , 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  4 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0 ,{  {    124           , 0x1C, 0xB8 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
          {  /*  5 */  GGE_MIPI_NULL,  GGE_MIPI_DATA_NULL ,  GGE_MIPI_REG_W_NULL       ,MIPI_USID_INIT0,{  {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
          {  /*  6 */  GGE_MIPI_NULL,  GGE_MIPI_DATA_NULL ,  GGE_MIPI_REG_W_NULL       ,MIPI_USID_INIT0,{  {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
          {  /*  7 */  GGE_MIPI_NULL,  GGE_MIPI_DATA_NULL ,  GGE_MIPI_REG_W_NULL       ,MIPI_USID_INIT0,{  {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
@@ -264,11 +264,11 @@ sGGE_MIPI_CTRL_TABLE_BAND GGE_MIPI_CTRL_TABLE_GSM900=
       /* GGE_MIPI_CTRL_TABLE_GSM900.mipi_tx_ctrl_table.mipi_txctrl_event[] */
       {  /*            element       data idx       event type       ,  event timing  */
          /*    No.      type   ,  { start, stop },                         ( QB )     */
-         {  /*  0 */  GGE_MIPI_PA  ,  {   0  ,  0   },  GGE_MIPI_TRX_ON      ,   QB_MIPI_TX_ON0   },
-         {  /*  1 */  GGE_MIPI_PA  ,  {   1  ,  1   },  GGE_MIPI_TRX_OFF     ,   QB_MIPI_TX_OFF0  },
-         {  /*  2 */  GGE_MIPI_ASM ,  {   2  ,  3   },  GGE_MIPI_TRX_ON      ,   QB_MIPI_TX_ON1   },
-         {  /*  3 */  GGE_MIPI_ASM ,  {   4  ,  4   },  GGE_MIPI_TRX_ON      ,   QB_MIPI_TX_ON2   },
-         {  /*  4 */  GGE_MIPI_ASM ,  {   5  ,  6   },  GGE_MIPI_TRX_OFF     ,   QB_MIPI_TX_OFF1  },
+         {  /*  0 */  GGE_MIPI_ASM  ,  {   0  ,  1   },  GGE_MIPI_TRX_ON      ,   QB_MIPI_TX_ON1   },
+         {  /*  1 */  GGE_MIPI_ASM  ,  {   2  ,  3   },  GGE_MIPI_TRX_ON     ,   QB_MIPI_TX_ON2  },
+         {  /*  2 */  GGE_MIPI_ASM ,  {   4  ,  5   },  GGE_MIPI_TRX_OFF      ,   QB_MIPI_TX_OFF1   },
+         {  /*  3 */  GGE_MIPI_NULL ,  {   0  ,  0   },  GGE_MIPI_EVENT_NULL      ,   0   },
+         {  /*  4 */  GGE_MIPI_NULL ,  {   0  ,  0   },  GGE_MIPI_EVENT_NULL     ,   0  },
          {  /*  5 */  GGE_MIPI_NULL,  {   0  ,  0   },  GGE_MIPI_EVENT_NULL  ,        0           },
          {  /*  6 */  GGE_MIPI_NULL,  {   0  ,  0   },  GGE_MIPI_EVENT_NULL  ,        0           },
          {  /*  7 */  GGE_MIPI_NULL,  {   0  ,  0   },  GGE_MIPI_EVENT_NULL  ,        0           },
@@ -280,13 +280,13 @@ sGGE_MIPI_CTRL_TABLE_BAND GGE_MIPI_CTRL_TABLE_GSM900=
       },
       /* GGE_MIPI_CTRL_TABLE_GSM900.mipi_tx_ctrl_table.mipi_txctrl_data[] */
       {     /* No.       elm type  ,  port select        ,  data format                 ,usid		  , {  { subband arfcn, addr, data }, { subband arfcn, addr, data }, { subband arfcn, addr, data }, { subband arfcn, addr, data }, { subband arfcn, addr, data },   */
-         {  /*  0 */  GGE_MIPI_PA  ,  GGE_MIPI_PORT0     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0  , {  {    124           , 0x01, GGE_MIPI_PA_G8 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
-         {  /*  1 */  GGE_MIPI_PA  ,  GGE_MIPI_PORT0     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0  , {  {    124           , 0x01, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
-         {  /*  2 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_ASM0 , {  {    124           , 0x1C, 0x38 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
-         {  /*  3 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_ASM0 , {  {    124           , 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
-         {  /*  4 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_ASM0 , {  {    124           , 0x00, 0x0A }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
-         {  /*  5 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_ASM0 , {  {    124           , 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
-         {  /*  6 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_ASM0 , {  {    124           , 0x1C, 0xB8 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  0 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0  , {  {    124           , 0x1C, 0x38 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  1 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0  , {  {    124           , 0x00, 0x06 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  2 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0  , {  {    124           , 0x01, 0x86 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  3 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0  , {  {    124           , 0x00, GGE_MIPI_PA_G8 }, {    GGE_NULL_ARFCN, 0x00, GGE_MIPI_PA_G8 }, {    GGE_NULL_ARFCN, 0x00, GGE_MIPI_PA_G8 }, {    GGE_NULL_ARFCN, 0x00, GGE_MIPI_PA_G8 }, {    GGE_NULL_ARFCN, 0x00, GGE_MIPI_PA_G8 }, }  },
+         {  /*  4 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0  , {  {    124           , 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  5 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0  , {  {    124           , 0x1C, 0xB8 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  6 */  GGE_MIPI_NULL , GGE_MIPI_DATA_NULL ,  GGE_MIPI_REG_W_NULL       ,MIPI_USID_INIT0 , {  {    GGE_NULL_ARFCN           , 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
          {  /*  7 */  GGE_MIPI_NULL,  GGE_MIPI_DATA_NULL ,  GGE_MIPI_REG_W_NULL       ,MIPI_USID_INIT0, {  {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
          {  /*  8 */  GGE_MIPI_NULL,  GGE_MIPI_DATA_NULL ,  GGE_MIPI_REG_W_NULL       ,MIPI_USID_INIT0, {  {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
          {  /*  9 */  GGE_MIPI_NULL,  GGE_MIPI_DATA_NULL ,  GGE_MIPI_REG_W_NULL       ,MIPI_USID_INIT0, {  {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
@@ -314,10 +314,10 @@ sGGE_MIPI_CTRL_TABLE_BAND GGE_MIPI_CTRL_TABLE_GSM900=
       /* GGE_MIPI_CTRL_TABLE_GSM900.mipi_tx_ctrl_table.mipi_txctrl_pa_data */
       {  /* GMSK Data */
          /* subband0 data , subband1 data , subband2 data , subband3 data , subband4 data  */
-         {    0x23        ,   0x23        ,   0x23        ,   0x23        ,   0x23           },
+         {    0x0A        ,   0x0A        ,   0x0A        ,   0x0A        ,   0x0A           },
          /* 8PSK Data */
          /* subband0 data , subband1 data , subband2 data , subband3 data , subband4 data  */
-         {    0x27        ,   0x27        ,   0x27        ,   0x27        ,   0x27           },
+         {    0x0B        ,   0x0B        ,   0x0B        ,   0x0B        ,   0x0B           },
       }
    },
    {
@@ -363,7 +363,7 @@ sGGE_MIPI_CTRL_TABLE_BAND GGE_MIPI_CTRL_TABLE_GSM900=
    #endif
       /* GGE_MIPI_CTRL_TABLE_GSM900.mipi_txmid_ctrl_table.mipi_txmidctrl_data[] */
       {     /* No.       elm type  ,  port select        ,  data format                 ,usid		  , {  { subband arfcn, addr, data }, { subband arfcn, addr, data }, { subband arfcn, addr, data }, { subband arfcn, addr, data }, { subband arfcn, addr, data },   */
-         {  /*  0 */  GGE_MIPI_PA  ,  GGE_MIPI_PORT0     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0  , {  {    124           , 0x01, GGE_MIPI_PA_G8 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  0 */  GGE_MIPI_PA  ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0  , {  {    124           , 0x00, GGE_MIPI_PA_G8 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
          {  /*  1 */  GGE_MIPI_NULL,  GGE_MIPI_DATA_NULL ,  GGE_MIPI_REG_W_NULL       ,MIPI_USID_INIT0, {  {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
       }
    }
@@ -554,11 +554,11 @@ sGGE_MIPI_CTRL_TABLE_BAND GGE_MIPI_CTRL_TABLE_DCS1800=
       },
       /* GGE_MIPI_CTRL_TABLE_DCS1800.mipi_rx_ctrl_table.mipi_rxctrl_data[] */
       {  	/*    No.    elm type  ,  port select    	   ,  data format      	        ,usid		      ,{  { subband arfcn, addr, data }, { subband arfcn, addr, data }, { subband arfcn, addr, data }, { subband arfcn, addr, data }, { subband arfcn, addr, data },   */
-         {  /*  0 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_ASM0 ,{  {    885           , 0x1C, 0x38 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
-         {  /*  1 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_ASM0 ,{  {    885           , 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
-         {  /*  2 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_ASM0 ,{  {    885           , 0x00, 0x01 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
-         {  /*  3 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_ASM0 ,{  {    885           , 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
-         {  /*  4 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_ASM0 ,{  {    885           , 0x1C, 0xB8 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  0 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0 ,{  {    885           , 0x1C, 0x38 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  1 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0 ,{  {    885           , 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  2 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0 ,{  {    885           , 0x00, 0x02 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  3 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0 ,{  {    885           , 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  4 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0 ,{  {    885           , 0x1C, 0xB8 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
          {  /*  5 */  GGE_MIPI_NULL,  GGE_MIPI_DATA_NULL ,  GGE_MIPI_REG_W_NULL       ,MIPI_USID_INIT0,{  {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
          {  /*  6 */  GGE_MIPI_NULL,  GGE_MIPI_DATA_NULL ,  GGE_MIPI_REG_W_NULL       ,MIPI_USID_INIT0,{  {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
          {  /*  7 */  GGE_MIPI_NULL,  GGE_MIPI_DATA_NULL ,  GGE_MIPI_REG_W_NULL       ,MIPI_USID_INIT0,{  {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
@@ -590,11 +590,11 @@ sGGE_MIPI_CTRL_TABLE_BAND GGE_MIPI_CTRL_TABLE_DCS1800=
       /* GGE_MIPI_CTRL_TABLE_DCS1800.mipi_tx_ctrl_table.mipi_txctrl_event[] */
       {  /*            element       data idx       event type       ,  event timing  */
          /*    No.      type   ,  { start, stop },                         ( QB )     */
-         {  /*  0 */  GGE_MIPI_PA  ,  {   0  ,  0   },  GGE_MIPI_TRX_ON      ,   QB_MIPI_TX_ON0   },
-         {  /*  1 */  GGE_MIPI_PA  ,  {   1  ,  1   },  GGE_MIPI_TRX_OFF     ,   QB_MIPI_TX_OFF0  },
-         {  /*  2 */  GGE_MIPI_ASM ,  {   2  ,  3   },  GGE_MIPI_TRX_ON      ,   QB_MIPI_TX_ON1   },
-         {  /*  3 */  GGE_MIPI_ASM ,  {   4  ,  4   },  GGE_MIPI_TRX_ON      ,   QB_MIPI_TX_ON2   },
-         {  /*  4 */  GGE_MIPI_ASM ,  {   5  ,  6   },  GGE_MIPI_TRX_OFF     ,   QB_MIPI_TX_OFF1  },
+         {  /*  0 */  GGE_MIPI_ASM ,  {   0  ,  1   },  GGE_MIPI_TRX_ON      ,   QB_MIPI_TX_ON1   },
+         {  /*  1 */  GGE_MIPI_ASM ,  {   2  ,  3   },  GGE_MIPI_TRX_ON      ,   QB_MIPI_TX_ON2   },
+         {  /*  2 */  GGE_MIPI_ASM ,  {   4  ,  5   },  GGE_MIPI_TRX_OFF     ,   QB_MIPI_TX_OFF1   },
+         {  /*  3 */  GGE_MIPI_NULL,  {   0  ,  0   },  GGE_MIPI_EVENT_NULL  ,   0   },
+         {  /*  4 */  GGE_MIPI_NULL,  {   0  ,  0   },  GGE_MIPI_EVENT_NULL  ,   0  },
          {  /*  5 */  GGE_MIPI_NULL,  {   0  ,  0   },  GGE_MIPI_EVENT_NULL  ,        0           },
          {  /*  6 */  GGE_MIPI_NULL,  {   0  ,  0   },  GGE_MIPI_EVENT_NULL  ,        0           },
          {  /*  7 */  GGE_MIPI_NULL,  {   0  ,  0   },  GGE_MIPI_EVENT_NULL  ,        0           },
@@ -606,13 +606,13 @@ sGGE_MIPI_CTRL_TABLE_BAND GGE_MIPI_CTRL_TABLE_DCS1800=
       },
       /* GGE_MIPI_CTRL_TABLE_DCS1800.mipi_tx_ctrl_table.mipi_txctrl_data[] */
       {     /* No.       elm type  ,  port select        ,  data format                 ,usid		  , {  { subband arfcn, addr, data }, { subband arfcn, addr, data }, { subband arfcn, addr, data }, { subband arfcn, addr, data }, { subband arfcn, addr, data },   */
-         {  /*  0 */  GGE_MIPI_PA  ,  GGE_MIPI_PORT0     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0  , {  {    885           , 0x01, GGE_MIPI_PA_G8 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
-         {  /*  1 */  GGE_MIPI_PA  ,  GGE_MIPI_PORT0     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0  , {  {    885           , 0x01, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
-         {  /*  2 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_ASM0 , {  {    885           , 0x1C, 0x38 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
-         {  /*  3 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_ASM0 , {  {    885           , 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
-         {  /*  4 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_ASM0 , {  {    885           , 0x00, 0x08 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
-         {  /*  5 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_ASM0 , {  {    885           , 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
-         {  /*  6 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_ASM0 , {  {    885           , 0x1C, 0xB8 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  0 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0  , {  {    885           , 0x1C, 0x38 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  1 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0  , {  {    885           , 0x00, 0x06 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  2 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0  , {  {    885           , 0x01, 0x49 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  3 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0  , {  {    885           , 0x00, GGE_MIPI_PA_G8 }, {    GGE_NULL_ARFCN, 0x00, GGE_MIPI_PA_G8 }, {    GGE_NULL_ARFCN, 0x00, GGE_MIPI_PA_G8 }, {    GGE_NULL_ARFCN, 0x00, GGE_MIPI_PA_G8 }, {    GGE_NULL_ARFCN, 0x00, GGE_MIPI_PA_G8 }, }  },
+         {  /*  4 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0  , {  {    885           , 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  5 */  GGE_MIPI_ASM ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0  , {  {    885           , 0x1C, 0xB8 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  6 */  GGE_MIPI_NULL,  GGE_MIPI_DATA_NULL ,  GGE_MIPI_REG_W_NULL       ,MIPI_USID_INIT0, {  {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
          {  /*  7 */  GGE_MIPI_NULL,  GGE_MIPI_DATA_NULL ,  GGE_MIPI_REG_W_NULL       ,MIPI_USID_INIT0, {  {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
          {  /*  8 */  GGE_MIPI_NULL,  GGE_MIPI_DATA_NULL ,  GGE_MIPI_REG_W_NULL       ,MIPI_USID_INIT0, {  {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
          {  /*  9 */  GGE_MIPI_NULL,  GGE_MIPI_DATA_NULL ,  GGE_MIPI_REG_W_NULL       ,MIPI_USID_INIT0, {  {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
@@ -640,10 +640,10 @@ sGGE_MIPI_CTRL_TABLE_BAND GGE_MIPI_CTRL_TABLE_DCS1800=
       /* GGE_MIPI_CTRL_TABLE_DCS1800.mipi_tx_ctrl_table.mipi_txctrl_pa_data */
       {  /* GMSK Data */
          /* subband0 data , subband1 data , subband2 data , subband3 data , subband4 data  */
-         {    0x33        ,   0x33        ,   0x33        ,   0x33        ,   0x33           },
+         {    0x0E        ,   0x0E        ,   0x0E        ,   0x0E        ,   0x0E           },
          /* 8PSK Data */
          /* subband0 data , subband1 data , subband2 data , subband3 data , subband4 data  */
-         {    0x37        ,   0x37        ,   0x37        ,   0x37        ,   0x37           },
+         {    0x0F        ,   0x0F        ,   0x0F        ,   0x0F        ,   0x0F           },
       }
    },
    {
@@ -689,7 +689,7 @@ sGGE_MIPI_CTRL_TABLE_BAND GGE_MIPI_CTRL_TABLE_DCS1800=
    #endif
       /* GGE_MIPI_CTRL_TABLE_DCS1800.mipi_txmid_ctrl_table.mipi_txmidctrl_data[] */
       {     /* No.       elm type  ,  port select        ,  data format                 ,usid		  , {  { subband arfcn, addr, data }, { subband arfcn, addr, data }, { subband arfcn, addr, data }, { subband arfcn, addr, data }, { subband arfcn, addr, data },   */
-         {  /*  0 */  GGE_MIPI_PA  ,  GGE_MIPI_PORT0     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0  , {  {    885           , 0x01, GGE_MIPI_PA_G8 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
+         {  /*  0 */  GGE_MIPI_PA  ,  GGE_MIPI_PORT1     ,  GGE_MIPI_REG_W            ,MIPI_USID_PA0  , {  {    885           , 0x00, GGE_MIPI_PA_G8 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
          {  /*  1 */  GGE_MIPI_NULL,  GGE_MIPI_DATA_NULL ,  GGE_MIPI_REG_W_NULL       ,MIPI_USID_INIT0, {  {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, {    GGE_NULL_ARFCN, 0x00, 0x00 }, }  },
       }
    }
